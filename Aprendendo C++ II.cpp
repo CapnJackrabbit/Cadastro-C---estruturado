@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <string>
+#include <locale.h>
 
 
 using namespace std;
@@ -34,10 +35,13 @@ int main()
     char opcao;
     // Instrucoes
 
+    setlocale(LC_ALL, "Portuguese");
+
     do
     {
         system("cls");
-        system("color 0f");
+        system("color 0f"); 
+        printf("ESCOLHA UMA OPÇÃO\n\n");
         printf(" C - CADASTRA UM ASSOCIADO \n");
         printf(" L - APRESENTA TODOS OS ASSOCIADOS CADASTRADOS\n");
         printf(" P - PESQUISA ASSOCIADO POR CPF \n");
